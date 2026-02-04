@@ -5033,11 +5033,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12\\Pract_12.csproj",
+      "projectUniqueName": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12_TRPO\\Pract_12.csproj",
       "projectName": "Pract_12",
-      "projectPath": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12\\Pract_12.csproj",
+      "projectPath": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12_TRPO\\Pract_12.csproj",
       "packagesPath": "C:\\Users\\st310-04\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12\\obj\\",
+      "outputPath": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12_TRPO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -47,7 +47,19 @@ namespace Pract_12.ValidationRules
                 }
                 if (text == text2)
                 {
-                    return new ValidationResult(false, "Нужен оригинальный логин");
+                    if (EditStudent.isEdit)
+                    {
+                        if (EditStudent.student.Login == text)
+                        {
+                            return ValidationResult.ValidResult;
+                        }
+                        else
+                        {
+                            return new ValidationResult(false, "Нужен оригинальный логин");
+                        }
+                    }
+                    else
+                        return new ValidationResult(false, "Нужен оригинальный логин");
                 }
             }
             return ValidationResult.ValidResult;

@@ -31,6 +31,8 @@ namespace Pract_12.Pages
         }
         public void go_form(object sender, EventArgs e)
         {
+            EditStudent.isEdit = false;
+            EditStudent.student = null;
             NavigationService.Navigate(new StudentFormPage());
         }
         public void Edit(object sender, EventArgs e)
@@ -40,6 +42,8 @@ namespace Pract_12.Pages
                 MessageBox.Show("Выберите элемент из списка!");
                 return;
             }
+            EditStudent.isEdit = true;
+            EditStudent.student = student;
             NavigationService.Navigate(new StudentFormPage(student));
         }
         public void remove(object sender, EventArgs e)
@@ -54,6 +58,13 @@ namespace Pract_12.Pages
             {
                 service.Remove(student);
             }
+        }
+
+        private void go_form(object sender, RoutedEventArgs e)
+        {
+            EditStudent.isEdit = false;
+            EditStudent.student = null;
+            NavigationService.Navigate(new StudentFormPage());
         }
     }
 }

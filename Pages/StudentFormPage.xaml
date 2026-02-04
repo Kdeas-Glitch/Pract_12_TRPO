@@ -15,9 +15,9 @@
         <StackPanel>
             <StackPanel>
                 <Label>Login</Label>
-                <TextBox m:HintAssist.Hint="Login">
-                    <TextBox.Text>
-                        <Binding Path="Login" UpdateSourceTrigger="PropertyChanged"
+                <TextBox m:HintAssist.Hint="Login" Validation.Error="ValidationHelp4" >
+                    <TextBox.Text >
+                        <Binding Path="Login" UpdateSourceTrigger="PropertyChanged"  
              ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validators:RequiredRule/>
@@ -29,12 +29,11 @@
             </StackPanel>
             <StackPanel>
                 <Label>Name</Label>
-                <TextBox m:HintAssist.Hint="Name" >
+                <TextBox m:HintAssist.Hint="Name" Validation.Error="ValidationHelp3">
                     <TextBox.Text>
-                        <Binding Path="Name" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                        <Binding Path="Name"  ValidatesOnDataErrors="True" UpdateSourceTrigger="PropertyChanged" >
                             <Binding.ValidationRules>
                                 <validators:RequiredRule/>
-                                <validators:LoginValidation/>
                             </Binding.ValidationRules>
                         </Binding>
                     </TextBox.Text>
@@ -42,9 +41,9 @@
             </StackPanel>
             <StackPanel>
                 <Label>Email</Label>
-                <TextBox m:HintAssist.Hint="Email">
-                    <TextBox.Text>
-                        <Binding Path="Email" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                <TextBox m:HintAssist.Hint="Email" Validation.Error="ValidationHelp2">
+                    <TextBox.Text >
+                        <Binding Path="Email"  UpdateSourceTrigger="PropertyChanged" >
                             <Binding.ValidationRules>
                                 <validators:RequiredRule/>
                                 <validators:MailValid/>
@@ -55,9 +54,9 @@
             </StackPanel>
             <StackPanel>
                 <Label>Password</Label>
-                <TextBox m:HintAssist.Hint="Password">
+                <TextBox m:HintAssist.Hint="Password" Validation.Error="ValidationHelp1">
                     <TextBox.Text>
-                        <Binding Path="Password" UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True">
+                        <Binding Path="Password" ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validators:RequiredRule/>
                                 <validators:PasswordValid/>
@@ -68,9 +67,9 @@
             </StackPanel>
             <StackPanel>
                 <Label>Дата CreatedAt</Label>
-                <TextBox m:HintAssist.Hint="Date">
+                <TextBox m:HintAssist.Hint="Date" Validation.Error="ValidationHelp">
                     <TextBox.Text>
-                        <Binding Path="CreatedAt" UpdateSourceTrigger="PropertyChanged"
+                        <Binding Path="CreatedAt" UpdateSourceTrigger="PropertyChanged" 
 ValidatesOnDataErrors="True">
                             <Binding.ValidationRules>
                                 <validators:DateValidation/>

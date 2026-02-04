@@ -35,20 +35,15 @@ namespace Pract_12.ValidationRules
             }
             foreach (var a in st)
             {
-                string text2 = "";
-                for (int i = 0; i < a.Email.Count(); i++)
+                if (text == a.Email)
                 {
-                    if (!Char.IsUpper(a.Email[i]))
+                    if (EditStudent.isEdit)
                     {
-                        text2 += Char.ToLower(a.Email[i]);
+                        if (EditStudent.student.Email == text)
+                        {
+                            return ValidationResult.ValidResult;
+                        }
                     }
-                    else
-                    {
-                        text2 += a.Email[i];
-                    }
-                }
-                if (text == text2)
-                {
                     return new ValidationResult(false, "Такая почта уже есть");
                 }
             }

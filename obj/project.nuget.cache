@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xJhHPXLxvp4gltkaKOV1LiycKhW69nHvW8SjTnm/kuYNvftmIibicQw8KTPdJoZzQBQJcnkXm9Ifpbzgd3Mg4A==",
+  "dgSpecHash": "Ea9Ctd/XgTFMFm+ofaJ1SCweQwr1Da63LSvG4ABwYwK8PzJmkWLj0NI6QmEpNlk6TW/H6iYEOAX279668ysIOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12\\Pract_12.csproj",
+  "projectFilePath": "C:\\Users\\st310-04\\Desktop\\Демин\\Pract_12_TRPO\\Pract_12.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\st310-04\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\st310-04\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
