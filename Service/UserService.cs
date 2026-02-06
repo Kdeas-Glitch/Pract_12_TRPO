@@ -34,12 +34,12 @@ namespace Pract_12.Service
         public int Commit() => _db.SaveChanges();
         public void GetAll()
         {
-            var students = _db.Students.ToList();
-            Students.Clear();
-            foreach (var student in students)
-            {
-                Students.Add(student);
-            }
+            //var students = _db.Students.ToList();
+            //Students.Clear();
+            //foreach (var student in students)
+            //{
+            //    Students.Add(student);
+            //}
         }
         public void Remove(Student student)
         {

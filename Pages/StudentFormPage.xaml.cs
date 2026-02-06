@@ -50,20 +50,13 @@ namespace Pract_12.Pages
         }
         private void save(object sender, RoutedEventArgs e)
         {
-            if (_student.Login != "" && _student.Email != "" && _student.Password != "" && _student.Name != "")
+            if (_student.Login != null && _student.Email != null && _student.Password != null && _student.Name != null)
             {
-                if (valid && valid1 && valid2 && valid3 && valid4)
-                {
                     if (isEdit)
                         _service.Commit();
                     else
                         _service.Add(_student);
                     NavigationService.GoBack();
-                }
-                else
-                {
-                    MessageBox.Show("Неа");
-                }
             }
             else
             {
